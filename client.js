@@ -10,6 +10,15 @@ function init(bundle, parent, options = {}) {
     fullScreen: true,
     ...options,
   });
+  function init(bundle, parent, options = {}) {
+  
+    // 3D SPHERE
+    r360.renderToLocation(
+      r360.createRoot('Sphere'),
+      r360.getDefaultLocation(),
+    );
+  
+  }
 
   // SPHERE
   const sphereSurface = new Surface(
